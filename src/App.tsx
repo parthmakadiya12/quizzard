@@ -1,9 +1,10 @@
+import { FC } from "react";
 import { BrowserRouter } from "react-router-dom";
 
 import "./App.css";
 import Routing from "./routing/Routing";
 
-const App = () => {
+const App: FC = () => {
   return (
     <div className="App">
       <BrowserRouter>
