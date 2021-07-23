@@ -1,10 +1,9 @@
-import { shallow } from 'enzyme';
 import App from './App';
 
 describe('<App/>', () => {
-  it('should have hello world text', () => {
+  it('should have routing component', () => {
     const wrapper=shallow(<App/>)
-    const text=wrapper.find("div").text();
-    expect(text).toBe("Hello World")
+    const child=wrapper.find("div").children();
+    expect(child).toBeTruthy();
   });
 });
