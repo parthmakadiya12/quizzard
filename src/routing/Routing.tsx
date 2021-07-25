@@ -6,9 +6,9 @@ import { paths } from "./paths";
 export default function Routing() {
   return (
     <Switch>
-      <Route exact path={paths.QUESTIONS} component={QuestionsPage} />
       <Route exact path={paths.QUESTION} component={QuestionDetailsPage} />
-      <Route exact path={paths.BASE} component={QuestionsPage} />
+      <Route exact path={paths.QUESTIONS} component={QuestionsPage} />
+      <Route path={paths.BASE} component={QuestionsPage} />
     </Switch>
   );
 }

@@ -1,5 +1,5 @@
-export const paths={
-    QUESTIONS:"/questions",
-    QUESTION:"/question/:question",
-    BASE:"/"
-}
+export const paths = {
+  QUESTIONS: "/questions",
+  QUESTION: "/questions/:question",
+  BASE: "/",
+};
