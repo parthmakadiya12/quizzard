@@ -24,7 +24,7 @@ describe("<Questions />", () => {
   });
 
   it("should change page url by clicking on vote button", () => {
-    wrapper.find("button").simulate("click");
+    wrapper.find("button").first().simulate("click");
     expect(pushSpy).toHaveBeenCalledWith("/questions/19");
   });
 });

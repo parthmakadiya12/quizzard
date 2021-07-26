@@ -6,6 +6,9 @@ it("configures the application store", () => {
       endpoint: undefined,
       questions: undefined,
     },
+    common: {
+      error: undefined,
+    },
   };
   expect(store.getState()).toEqual(initialAppState);
 });
