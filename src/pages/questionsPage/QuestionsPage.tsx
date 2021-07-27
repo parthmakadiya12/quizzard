@@ -1,55 +1,55 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import { getEndPoint } from "./actions/questionsPageAction";
 import { QuestionCard } from "./components";
+import styled from "styled-components";
 
-const QuestionsPage: FC = () => {
+interface PropTypes {
+  questions: any;
+  endpoint: string;
+  getEndPoint: () => void;
+  getQuestions: () => void;
+}
+
+const QuestionsPage: FC<PropTypes> = ({
+  questions,
+  endpoint,
+  getEndPoint,
+  getQuestions,
+}) => {
   const history = useHistory();
 
-  const data = [
-    {
-      question: "my question 11 ?",
-      choices: [
-        {
-          choice: "C++",
-          votes: 0,
-          url: "/questions/19/choices/108",
-        },
-        {
-          choice: "Python",
-          votes: 0,
-          url: "/questions/19/choices/109",
-        },
-        {
-          choice: "Ruby",
-          votes: 0,
-          url: "/questions/19/choices/110",
-        },
-        {
-          choice: "Verilog",
-          votes: 0,
-          url: "/questions/19/choices/111",
-        },
-      ],
-      published_at: "2021-07-23T12:03:38.485Z",
-      url: "/questions/19",
-    },
-  ];
+  useEffect(() => {
+    async function getInitialData() {
+      if (!endpoint) {
+        await getEndPoint();
+      }
+      await getQuestions();
+    }
+
+    getInitialData();
+  }, []);
+
   return (
-    <div id="questions-list">
-      QuestionsPage
-      {data.map((item) => {
-        return (
-          <QuestionCard
-            key={item.url}
-            question={item.question}
-            publishedDate={item.published_at}
-            noOfChoices={item.choices.length}
-            clickHandler={() => history.push(item.url)}
-          />
-        );
-      })}
-    </div>
+    <Wrapper id="questions-list">
+      {questions &&
+        questions.map((item: any) => {
+          return (
+            <QuestionCard
+              key={item.url}
+              question={item.question}
+              publishedDate={item.published_at}
+              noOfChoices={item.choices.length}
+              clickHandler={() => history.push(item.url)}
+            />
+          );
+        })}
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  margin-top: 1rem;
+`;
 
 export default QuestionsPage;

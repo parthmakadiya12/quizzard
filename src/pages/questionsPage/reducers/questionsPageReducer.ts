@@ -1,11 +1,11 @@
 import * as types from "../types.json";
 
-interface initialStateTypes {
+export interface QuestionPageStateType {
   endpoint?: string;
   questions?: object;
 }
 
-export const initialState: initialStateTypes = {
+export const initialState: QuestionPageStateType = {
   endpoint: undefined,
   questions: undefined,
 };

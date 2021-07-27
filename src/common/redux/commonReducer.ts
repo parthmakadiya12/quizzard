@@ -1,6 +1,10 @@
 import * as types from "./types.json";
 
-export const initialState: any = {
+export interface CommonStateTypes {
+  error?: string;
+}
+
+export const initialState: CommonStateTypes = {
   error: undefined,
 };
 

@@ -1,6 +1,7 @@
 import QuestionCard from "./QuestionCard";
 import { ThemeProvider } from "styled-components";
-import { darkTheme } from "../../../../styles/theme";
+import { darkTheme, lightTheme } from "../../../../styles/theme";
+import "jest-styled-components";
 
 describe("<QuestionCard />", () => {
   let props: any, wrapper: any;
@@ -33,5 +34,14 @@ describe("<QuestionCard />", () => {
     const button = wrapper.find("button");
     button.simulate("click");
     expect(props.clickHandler).toHaveBeenCalled();
+  });
+
+  it("should have different style if theme is light", () => {
+    wrapper = mount(
+      <ThemeProvider theme={lightTheme}>
+        <QuestionCard {...props} />
+      </ThemeProvider>
+    );
+    expect(wrapper.find("div").first()).toHaveStyleRule("border", "none");
   });
 });

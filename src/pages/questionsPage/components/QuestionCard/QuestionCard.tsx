@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styled from "styled-components";
-import { Button } from "../../../../common/Button/Button";
+import { Button } from "../../../../common";
 
 interface PropTypes {
   question: string;

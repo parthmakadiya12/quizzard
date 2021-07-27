@@ -5,7 +5,6 @@ import thunk from "redux-thunk";
 import axios from "../../../utils/http";
 import * as types from "../types.json";
 import { getEndPoint, getQuestions } from "./questionsPageAction";
-import * as helper from "../../../common/redux/commonActions";
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
@@ -46,11 +45,15 @@ describe("questionsPageActions", () => {
     axiosMock.onGet(`/`).reply(404, {
       response: { data: "User unauthenticated" },
     });
-
-    helper.errorHandling = jest.fn().mockReturnValue(true);
-
+    const expectedAction = [
+      {
+        payload:
+          "Request failed for GET/GET_ENDPOINT. Please try again later. Error is Request failed with status code 404",
+        type: "ERROR",
+      },
+    ];
     await store.dispatch(getEndPoint());
-    expect(helper.errorHandling).toHaveBeenCalled();
+    expect(store.getActions()).toEqual(expectedAction);
   });
 
   it("getQuestions: should dispatch proper type with payload", async () => {
@@ -70,10 +73,14 @@ describe("questionsPageActions", () => {
     axiosMock.onGet(`/questions?page=4`).reply(404, {
       response: { data: "User unauthenticated" },
     });
-
-    helper.errorHandling = jest.fn().mockReturnValue(true);
-
+    const expectedAction = [
+      {
+        payload:
+          "Request failed for GET/GET_QUESTIONS. Please try again later. Error is Request failed with status code 404",
+        type: "ERROR",
+      },
+    ];
     await store.dispatch(getQuestions(4));
-    expect(helper.errorHandling).toHaveBeenCalled();
+    expect(store.getActions()).toEqual(expectedAction);
   });
 });
