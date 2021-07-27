@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateQuestionPage> should render page correctly 1`] = `
+<div
+  className="sc-jSFjdj fLRfQM"
+>
+  <h3
+    className="sc-dlnjwi gLtfcp"
+  >
+    Create New Question
+  </h3>
+  <form>
+    <h4
+      className="sc-hKFxyN ezUaUl"
+    >
+      Question
+    </h4>
+  </form>
+</div>
+`;

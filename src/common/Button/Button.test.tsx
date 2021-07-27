@@ -1,4 +1,4 @@
-import { Button, ButtonProps } from "./Button";
+import Button, { ButtonProps } from "./Button";
 import { ThemeProvider } from "styled-components";
 
 describe("<Button />", () => {

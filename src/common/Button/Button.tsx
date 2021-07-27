@@ -7,15 +7,15 @@ export interface ButtonProps {
   clickHandler: () => void;
 }
 
-export const Button: FC<ButtonProps> = ({ text, children, clickHandler }) => {
+const Button: FC<ButtonProps> = ({ text, children, clickHandler }) => {
   return <ButtonStyled onClick={clickHandler}>{text || children}</ButtonStyled>;
 };
 
 const ButtonStyled = styled.button`
-  height: 3rem;
+  height: 2.5rem;
   min-width: 3rem;
   max-width: 15rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border: none;
   border-radius: 2rem;
   outline: none;
@@ -30,3 +30,5 @@ const ButtonStyled = styled.button`
     background-position: left;
   }
 `;
+
+export default Button;
