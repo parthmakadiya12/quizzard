@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Radio> should render correctly 1`] = `
+<div>
+  <div
+    className="sc-bdnxRM kLuAZG"
+  >
+    <input
+      className="sc-gtsrHT fWHZtE"
+      defaultChecked={false}
+      name="radio"
+      type="radio"
+      value="Option"
+    />
+    <span
+      className="sc-dlnjwi CWyZM"
+      onClick={[Function]}
+    >
+      Option
+    </span>
+  </div>
+</div>
+`;
