@@ -16,12 +16,12 @@ describe("<Routes/>", () => {
   let store;
   beforeEach(() => {
     store = mockStore({
-      quizzard: { questions: [], endpoint: "/questions" },
+      quizzard: { questions: null, endpoint: "/questions" },
       common: { error: null },
     });
   });
 
-  const createMountedComponent = (path) => {
+  const createMountedComponent = (path: string) => {
     return mount(
       <Provider store={store}>
         <ThemeProvider theme={darkTheme}>

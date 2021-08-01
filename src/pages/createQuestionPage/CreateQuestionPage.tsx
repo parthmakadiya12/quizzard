@@ -7,6 +7,7 @@ const CreateQuestionPage = () => {
       <H3>Create New Question</H3>
       <form>
         <H4>Question</H4>
+        <P>TODO: Future versions</P>
       </form>
     </Wrapper>
   );

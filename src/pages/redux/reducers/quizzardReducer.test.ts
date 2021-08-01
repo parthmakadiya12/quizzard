@@ -1,4 +1,4 @@
-import questionsReducer, { initialState } from "./questionsPageReducer";
+import questionsReducer, { initialState } from "../reducers/quizzardReducer";
 import * as types from "../types.json";
 const initialStore = {
   quizzard: {
@@ -21,6 +21,28 @@ describe("questionsReducer", () => {
       payload: "/questions",
     });
     expect(newState).toEqual({ ...initialState, endpoint: "/questions" });
+  });
+
+  it(`should update votes by dispatching ${types.VOTE}`, () => {
+    const newState = questionsReducer.quizzard(initialState, {
+      type: types.VOTE,
+      payload: [{ path: "/123" }],
+    });
+    expect(newState).toEqual({
+      ...initialState,
+      questions: [{ path: "/123" }],
+    });
+  });
+
+  it(`should update question by dispatching ${types.GET_QUESTION}`, () => {
+    const newState = questionsReducer.quizzard(initialState, {
+      type: types.GET_QUESTION,
+      payload: [{ path: "/123" }],
+    });
+    expect(newState).toEqual({
+      ...initialState,
+      questions: [{ path: "/123" }],
+    });
   });
 
   it(`should save endpoint by getting type ${types.GET_QUESTIONS}`, () => {

@@ -1,5 +1,5 @@
 import { Route, Switch } from "react-router-dom";
-import QuestionDetailsPage from "../pages/questionDetailsPage/QuestionDetailsPage";
+import QuestionDetailsPage from "../pages/questionDetailsPage/QuestionDetailsPageContainer";
 import QuestionsPage from "../pages/questionsPage/QuestionsPageContainer";
 import CreateQuestionPage from "../pages/createQuestionPage/CreateQuestionPage";
 import { paths } from "./paths";

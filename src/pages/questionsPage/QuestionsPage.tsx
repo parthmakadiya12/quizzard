@@ -1,6 +1,6 @@
 import { FC, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import { getEndPoint } from "./actions/questionsPageAction";
+import { getEndPoint } from "../redux/actions/quizzardAction";
 import { QuestionCard } from "./components";
 import styled from "styled-components";
 

@@ -1,8 +1,9 @@
+import { QuestionType } from "../../../common/types/QuestionType";
 import * as types from "../types.json";
 
 export interface QuestionPageStateType {
   endpoint?: string;
-  questions?: object;
+  questions?: QuestionType[];
 }
 
 export const initialState: QuestionPageStateType = {
@@ -18,6 +19,14 @@ const questionsReducer = {
         endpoint: action.payload,
       }),
       [types.GET_QUESTIONS]: () => ({
+        ...state,
+        questions: action.payload,
+      }),
+      [types.VOTE]: () => ({
+        ...state,
+        questions: action.payload,
+      }),
+      [types.GET_QUESTION]: () => ({
         ...state,
         questions: action.payload,
       }),

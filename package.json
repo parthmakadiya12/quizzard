@@ -58,7 +58,9 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/index.tsx",
-      "!src/routing/paths.tsx"
+      "!src/routing/paths.tsx",
+      "!src/common/styles/*",
+      "!src/common/types/*"
     ]
   },
   "devDependencies": {
