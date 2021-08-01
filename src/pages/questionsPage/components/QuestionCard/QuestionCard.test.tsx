@@ -26,7 +26,7 @@ describe("<QuestionCard />", () => {
     expect(items.at(1).text()).toBe(
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus in velit temporibus cumque quidem ipsa hic quos ?"
     );
-    expect(items.at(2).text()).toBe("July 21,2021");
+    expect(items.at(2).text()).toBe("Wednesday, July 21, 2021");
     expect(items.at(3).text()).toBe("4 Choices");
   });
 

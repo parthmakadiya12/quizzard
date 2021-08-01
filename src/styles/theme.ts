@@ -8,9 +8,9 @@ export const darkTheme = {
     fontSecondry: "#cec3c3", // dirty white
     headerColor: "#8d95bb", // light purple
     checkBox: "#117fec", // blue
-    title: "#8c94bd", // blue
+    title: "#8c94bd", // wild blue
     button: "#127eeb", //light blue
-    buttonSecondry: "#4098f0",
+    buttonSecondry: "#4098f0", //lighter blue
     buttonFontColor: "white",
   },
   type: "dark",
