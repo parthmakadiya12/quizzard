@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<QuestionsDetailsPage> should render correctly 1`] = `
+"<Component theme={{...}}>
+  <QuestionDetailsPage question={{...}} getQuestionData={[Function: mockConstructor] { _isMockFunction: true, getMockImplementation: [Function (anonymous)], mock: Object [Object: null prototype] { calls: [], instances: [], invocationCallOrder: [], results: [] }, mockClear: [Function (anonymous)], mockReset: [Function (anonymous)], mockRestore: [Function (anonymous)], mockReturnValueOnce: [Function (anonymous)], mockResolvedValueOnce: [Function (anonymous)], mockRejectedValueOnce: [Function (anonymous)], mockReturnValue: [Function (anonymous)], mockResolvedValue: [Function (anonymous)], mockRejectedValue: [Function (anonymous)], mockImplementationOnce: [Function (anonymous)], mockImplementation: [Function (anonymous)], mockReturnThis: [Function (anonymous)], mockName: [Function (anonymous)], getMockName: [Function (anonymous)] }} voteOnQuestion={[Function: mockConstructor] { _isMockFunction: true, getMockImplementation: [Function (anonymous)], mock: Object [Object: null prototype] { calls: [], instances: [], invocationCallOrder: [], results: [] }, mockClear: [Function (anonymous)], mockReset: [Function (anonymous)], mockRestore: [Function (anonymous)], mockReturnValueOnce: [Function (anonymous)], mockResolvedValueOnce: [Function (anonymous)], mockRejectedValueOnce: [Function (anonymous)], mockReturnValue: [Function (anonymous)], mockResolvedValue: [Function (anonymous)], mockRejectedValue: [Function (anonymous)], mockImplementationOnce: [Function (anonymous)], mockImplementation: [Function (anonymous)], mockReturnThis: [Function (anonymous)], mockName: [Function (anonymous)], getMockName: [Function (anonymous)] }}>
+    <Styled(Styled(styled.div))>
+      <div className=\\"sc-gtsrHT sc-dlnjwi sc-bqGGPW cPlHGU gvUkqF cMruq\\">
+        <styled.span>
+          <span className=\\"sc-hKFxyN eTEXUW\\">
+            Favourite programming language?
+          </span>
+        </styled.span>
+        <styled.div alignItems=\\"center\\">
+          <div className=\\"sc-bdnxRM oNYUZ\\">
+            <Radio name=\\"Swift\\" choiceUrl=\\"/questions/1/choices/1\\" queUrl=\\"/questions/1\\" clickHandler={[Function: clickHandler]} checked={false} selected=\\"\\">
+              <div>
+                <styled.div>
+                  <div className=\\"sc-pNWdM zdBa-d\\">
+                    <styled.input value=\\"Swift\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false}>
+                      <input value=\\"Swift\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false} className=\\"sc-jrsJWt YpWzs\\" />
+                    </styled.input>
+                    <styled.span onClick={[Function: onClick]} Checked={false}>
+                      <span onClick={[Function: onClick]} className=\\"sc-kEqXSa bmqgSv\\">
+                        Swift
+                      </span>
+                    </styled.span>
+                  </div>
+                </styled.div>
+              </div>
+            </Radio>
+            <styled.p>
+              <p className=\\"sc-fujyAs dJRJQl\\">
+                53.33
+                %
+              </p>
+            </styled.p>
+          </div>
+        </styled.div>
+        <styled.div alignItems=\\"center\\">
+          <div className=\\"sc-bdnxRM oNYUZ\\">
+            <Radio name=\\"Python\\" choiceUrl=\\"/questions/1/choices/2\\" queUrl=\\"/questions/1\\" clickHandler={[Function: clickHandler]} checked={false} selected=\\"\\">
+              <div>
+                <styled.div>
+                  <div className=\\"sc-pNWdM zdBa-d\\">
+                    <styled.input value=\\"Python\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false}>
+                      <input value=\\"Python\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false} className=\\"sc-jrsJWt YpWzs\\" />
+                    </styled.input>
+                    <styled.span onClick={[Function: onClick]} Checked={false}>
+                      <span onClick={[Function: onClick]} className=\\"sc-kEqXSa bmqgSv\\">
+                        Python
+                      </span>
+                    </styled.span>
+                  </div>
+                </styled.div>
+              </div>
+            </Radio>
+            <styled.p>
+              <p className=\\"sc-fujyAs dJRJQl\\">
+                26.67
+                %
+              </p>
+            </styled.p>
+          </div>
+        </styled.div>
+        <styled.div alignItems=\\"center\\">
+          <div className=\\"sc-bdnxRM oNYUZ\\">
+            <Radio name=\\"Objective-C\\" choiceUrl=\\"/questions/1/choices/3\\" queUrl=\\"/questions/1\\" clickHandler={[Function: clickHandler]} checked={false} selected=\\"\\">
+              <div>
+                <styled.div>
+                  <div className=\\"sc-pNWdM zdBa-d\\">
+                    <styled.input value=\\"Objective-C\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false}>
+                      <input value=\\"Objective-C\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false} className=\\"sc-jrsJWt YpWzs\\" />
+                    </styled.input>
+                    <styled.span onClick={[Function: onClick]} Checked={false}>
+                      <span onClick={[Function: onClick]} className=\\"sc-kEqXSa bmqgSv\\">
+                        Objective-C
+                      </span>
+                    </styled.span>
+                  </div>
+                </styled.div>
+              </div>
+            </Radio>
+            <styled.p>
+              <p className=\\"sc-fujyAs dJRJQl\\">
+                13.33
+                %
+              </p>
+            </styled.p>
+          </div>
+        </styled.div>
+        <styled.div alignItems=\\"center\\">
+          <div className=\\"sc-bdnxRM oNYUZ\\">
+            <Radio name=\\"Ruby\\" choiceUrl=\\"/questions/1/choices/4\\" queUrl=\\"/questions/1\\" clickHandler={[Function: clickHandler]} checked={false} selected=\\"\\">
+              <div>
+                <styled.div>
+                  <div className=\\"sc-pNWdM zdBa-d\\">
+                    <styled.input value=\\"Ruby\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false}>
+                      <input value=\\"Ruby\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false} className=\\"sc-jrsJWt YpWzs\\" />
+                    </styled.input>
+                    <styled.span onClick={[Function: onClick]} Checked={false}>
+                      <span onClick={[Function: onClick]} className=\\"sc-kEqXSa bmqgSv\\">
+                        Ruby
+                      </span>
+                    </styled.span>
+                  </div>
+                </styled.div>
+              </div>
+            </Radio>
+            <styled.p>
+              <p className=\\"sc-fujyAs dJRJQl\\">
+                6.67
+                %
+              </p>
+            </styled.p>
+          </div>
+        </styled.div>
+        <Button clickHandler={[Function: clickHandler]}>
+          <styled.button onClick={[Function: clickHandler]}>
+            <button onClick={[Function: clickHandler]} className=\\"sc-crzoAE gyLjuP\\">
+              Save
+            </button>
+          </styled.button>
+        </Button>
+      </div>
+    </Styled(Styled(styled.div))>
+  </QuestionDetailsPage>
+</Component>"
+`;
