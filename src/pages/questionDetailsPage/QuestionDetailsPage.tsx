@@ -1,11 +1,13 @@
 import { FC, useState, useEffect } from "react";
 import styled from "styled-components";
+import { useParams } from "react-router-dom";
 
 import { CardTitle, Wrapper, Row } from "../../common/styles/layout";
 import { P } from "../../common/styles/typography";
 import { Radio } from "../../common/Radio/Radio";
 import { Button } from "../../common";
 import { QuestionType } from "../../common/types/QuestionType";
+import media from "../../common/styles/media";
 
 export interface PropTypes {
   question?: QuestionType;
@@ -17,6 +19,7 @@ const QuestionDetailsPage: FC<PropTypes> = ({
   voteOnQuestion,
   getQuestionData,
 }) => {
+  const { questionId } = useParams<{ questionId: string }>();
   const [name, setName] = useState<string>("");
   const [choiceUrl, setChoiceUrl] = useState<string>("");
   const [quesUrl, setQuesUrl] = useState<string>("");
@@ -35,15 +38,12 @@ const QuestionDetailsPage: FC<PropTypes> = ({
 
   useEffect(() => {
     if (!question) {
-      const currentUrl = window.location.pathname;
-      const questionIdRegex = new RegExp(`[^\/questions\/][0-9]*$`, "g");
-      const questionId = currentUrl.match(questionIdRegex);
       getQuestionData(questionId);
     }
   }, []);
 
   return (
-    <WrapperStyled>
+    <WrapperStyled id="questionWrapper">
       <CardTitle>{question && question.question}</CardTitle>
       {question &&
         question.choices.map((option: any) => (
@@ -70,6 +70,9 @@ const QuestionDetailsPage: FC<PropTypes> = ({
 const WrapperStyled = styled(Wrapper)`
   & > button {
     margin-top: 1rem;
+  }
+  @media ${media.tablet} {
+    max-width: 600px;
   }
 `;
 

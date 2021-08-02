@@ -4,6 +4,14 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme } from "../../styles/theme";
 import "jest-styled-components";
 
+jest.mock("react-router-dom", () => ({
+  ...jest.requireActual("react-router-dom"),
+  useParams: () => ({
+    questionId: "12",
+  }),
+  useRouteMatch: () => ({ url: "/questions/12/" }),
+}));
+
 describe("<QuestionsDetailsPage>", () => {
   let props: PropTypes;
   beforeEach(() => {
@@ -77,7 +85,6 @@ describe("<QuestionsDetailsPage>", () => {
   });
 
   it("should call getQuestionData if user visits child page directly", () => {
-    window.location = new URL("https://www.example.com/questions/123");
     const newProps = { ...props, question: undefined };
     const wrapper = mount(
       <ThemeProvider theme={darkTheme}>

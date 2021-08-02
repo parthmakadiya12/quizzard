@@ -2,6 +2,8 @@ import { FC } from "react";
 import styled from "styled-components";
 import { Button } from "../../../../common";
 import { CardTitle, Wrapper } from "../../../../common/styles/layout";
+import media from "../../../../common/styles/media";
+
 import { jsDateToFormat } from "../../../../utils/dateUtils";
 interface PropTypes {
   question: string;
@@ -17,15 +19,24 @@ const QuestionCard: FC<PropTypes> = ({
   clickHandler,
 }) => {
   return (
-    <Wrapper>
+    <QuestionWrapper>
       <CardTitle>Question</CardTitle>
       <Question>{question}</Question>
       <SmallText>{jsDateToFormat(new Date(publishedDate))}</SmallText>
       <SmallText>{noOfChoices} Choices</SmallText>
       <Button text="Vote" clickHandler={clickHandler} />
-    </Wrapper>
+    </QuestionWrapper>
   );
 };
+
+const QuestionWrapper = styled(Wrapper)`
+  @media ${media.tablet} {
+    margin: 0;
+    margin-bottom: 10px;
+    display: grid;
+    justify-self: center;
+  }
+`;
 
 const Question = styled.span`
   font-size: 1rem;

@@ -3,8 +3,8 @@
 exports[`<QuestionsDetailsPage> should render correctly 1`] = `
 "<Component theme={{...}}>
   <QuestionDetailsPage question={{...}} getQuestionData={[Function: mockConstructor] { _isMockFunction: true, getMockImplementation: [Function (anonymous)], mock: Object [Object: null prototype] { calls: [], instances: [], invocationCallOrder: [], results: [] }, mockClear: [Function (anonymous)], mockReset: [Function (anonymous)], mockRestore: [Function (anonymous)], mockReturnValueOnce: [Function (anonymous)], mockResolvedValueOnce: [Function (anonymous)], mockRejectedValueOnce: [Function (anonymous)], mockReturnValue: [Function (anonymous)], mockResolvedValue: [Function (anonymous)], mockRejectedValue: [Function (anonymous)], mockImplementationOnce: [Function (anonymous)], mockImplementation: [Function (anonymous)], mockReturnThis: [Function (anonymous)], mockName: [Function (anonymous)], getMockName: [Function (anonymous)] }} voteOnQuestion={[Function: mockConstructor] { _isMockFunction: true, getMockImplementation: [Function (anonymous)], mock: Object [Object: null prototype] { calls: [], instances: [], invocationCallOrder: [], results: [] }, mockClear: [Function (anonymous)], mockReset: [Function (anonymous)], mockRestore: [Function (anonymous)], mockReturnValueOnce: [Function (anonymous)], mockResolvedValueOnce: [Function (anonymous)], mockRejectedValueOnce: [Function (anonymous)], mockReturnValue: [Function (anonymous)], mockResolvedValue: [Function (anonymous)], mockRejectedValue: [Function (anonymous)], mockImplementationOnce: [Function (anonymous)], mockImplementation: [Function (anonymous)], mockReturnThis: [Function (anonymous)], mockName: [Function (anonymous)], getMockName: [Function (anonymous)] }}>
-    <Styled(Styled(styled.div))>
-      <div className=\\"sc-gtsrHT sc-dlnjwi sc-bqGGPW cPlHGU gvUkqF cMruq\\">
+    <Styled(Styled(styled.div)) id=\\"questionWrapper\\">
+      <div id=\\"questionWrapper\\" className=\\"sc-gtsrHT sc-dlnjwi sc-bqGGPW cPlHGU eogWRV fbxJK\\">
         <styled.span>
           <span className=\\"sc-hKFxyN eTEXUW\\">
             Favourite programming language?

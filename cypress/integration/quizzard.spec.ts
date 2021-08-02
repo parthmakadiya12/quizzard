@@ -1,4 +1,4 @@
-describe("quizzard", () => {
+describe("quizzard happy path test", () => {
   it("should change theme properly", function () {
     cy.visit("http://localhost:3000");
     cy.get("#toggle-theme").click();
@@ -14,9 +14,20 @@ describe("quizzard", () => {
   });
 
   it("should renders question details page correctly", function () {
-    cy.visit("http://localhost:3000/questions/12");
-    cy.get(".App > div")
+    cy.visit("http://localhost:3000/questions/14");
+    cy.server();
+    cy.route("POST", "/questions/**/choices/**").as("post");
+
+    cy.get("#questionWrapper > span")
       .should("be.visible")
-      .and("have.text", "QuestionDetailsPage");
+      .and("have.text", "Favourite programming language?");
+
+    cy.get("#questionWrapper > div:first > div > div > span").click();
+    cy.get("#questionWrapper >button").click();
+
+    //Ideally we should mock these
+    cy.wait("@post").should((xhr) => {
+      expect(xhr.status, "successful POST").to.equal(201);
+    });
   });
 });

@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import media from "./media";
 
 export const Row = styled.div<any>`
   display: flex;
@@ -26,12 +27,17 @@ export const Wrapper = styled(Col)`
   border-radius: 0.8rem;
   padding: 2rem;
   margin: 0.5rem;
+
+  margin: auto;
   ${({ theme }) =>
     theme.type === "light" &&
     `
-        border:none;
-        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-    `}
+      border:none;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  `}
+  @media ${media.tablet} {
+    width: 60%;
+  }
 `;
 
 export const CardTitle = styled.span`

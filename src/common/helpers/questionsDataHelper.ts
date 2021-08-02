@@ -19,7 +19,7 @@ export const calculatePercentage = (questions: QuestionType[]) => {
 
 export const questionSelector = (questions?: QuestionType[]) => {
   if (!questions) return null;
-  const url = window.location.pathname;
+  const url = window.location.pathname.replace(/\/+$/, "");
   let result = {};
   questions.forEach((question: QuestionType) => {
     if (question.url === url) result = question;
