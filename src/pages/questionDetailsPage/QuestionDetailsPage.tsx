@@ -40,7 +40,7 @@ const QuestionDetailsPage: FC<PropTypes> = ({
     if (!question) {
       getQuestionData(questionId);
     }
-  }, []);
+  }, [question, getQuestionData, questionId]);
 
   return (
     <WrapperStyled id="questionWrapper">

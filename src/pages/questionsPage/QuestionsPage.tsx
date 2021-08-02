@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { FC, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { getEndPoint } from "../redux/actions/quizzardAction";
@@ -28,7 +29,7 @@ const QuestionsPage: FC<PropTypes> = ({
     }
 
     getInitialData();
-  }, []);
+  }, [getEndPoint, getQuestions, endpoint]);
 
   return (
     <Wrapper id="questions-list">

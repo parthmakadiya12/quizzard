@@ -6,7 +6,6 @@ import QuestionDetailsPage from "./QuestionDetailsPage";
 import * as actions from "../redux/actions/quizzardAction";
 import { QuestionPageStateType } from "../redux/reducers/quizzardReducer";
 import { CommonStateTypes } from "../../common/redux/commonReducer";
-import { QuestionType } from "../../common/types/QuestionType";
 import { questionSelector } from "../../common/helpers/questionsDataHelper";
 
 interface StateType {

@@ -38,7 +38,7 @@ export const getQuestions =
 export const voteOnQuestion =
   (optionUrl: string, questionUrl: string) =>
   async (dispatch: any, getState: () => any) => {
-    const { questions, endpoint } = getState().quizzard;
+    const { questions } = getState().quizzard;
     try {
       await axios.post(optionUrl);
       dispatch({
