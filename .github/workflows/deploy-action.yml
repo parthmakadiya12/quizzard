@@ -26,6 +26,15 @@ jobs:
       - run: npm install -g surge
       - run: npm install
 
+      # Run tests
+      - run: npm run test --coverage --watchAll=true
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          build: npm run build
+          start: npm start
+          wait-on: http://localhost:3000
+
       # create production build
       - run: npm run build
 

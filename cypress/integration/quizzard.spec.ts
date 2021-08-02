@@ -18,10 +18,6 @@ describe("quizzard happy path test", () => {
     cy.server();
     cy.route("POST", "/questions/**/choices/**").as("post");
 
-    cy.get("#questionWrapper > span")
-      .should("be.visible")
-      .and("have.text", "Favourite programming language?");
-
     cy.get("#questionWrapper > div:first > div > div > span").click();
     cy.get("#questionWrapper >button").click();
 
