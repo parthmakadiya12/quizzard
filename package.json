@@ -34,7 +34,8 @@
     "eject": "react-scripts eject",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
+    "fire": "cd build && cp index.html 200.html && surge --domain votingapp.surge.sh"
   },
   "eslintConfig": {
     "extends": [

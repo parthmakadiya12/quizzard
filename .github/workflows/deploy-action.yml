@@ -1,28 +1,42 @@
 name: deploy
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     name: Deploying to surge
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v1
-      - name: Install surge and fire deployment
+
+      # Install node v14
+      - name: Install node v14
         uses: actions/setup-node@v1
         with:
           node-version: 14
 
-      - name: clean cache
-        run: npm cache clean --force
+      # Install surge and dependencies
       - run: npm install -g surge
       - run: npm install
+
+      # create production build
       - run: npm run build
-      - run: cd ./build && surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+
+      # deploy it to surge
+      - run: cd ./build && cp index.html 200.html && surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+
+      # comment on commit
       - name: Create commit comment
         uses: peter-evans/commit-comment@v1
         with:
           body: |
             New version published to Website 
             - Website [link][1]
-            [1]: https://www.voting-app.parthmakadiya.in
+            [1]: http://votingapp.surge.sh/
