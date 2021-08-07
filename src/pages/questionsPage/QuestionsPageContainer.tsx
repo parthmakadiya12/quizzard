@@ -6,19 +6,17 @@ import { withRouter } from "react-router-dom";
 import QuestionsPage from "./QuestionsPage";
 import * as actions from "../redux/actions/quizzardAction";
 import { QuestionPageStateType } from "../redux/reducers/quizzardReducer";
-import { CommonStateTypes } from "../../common/redux/commonReducer";
 
 interface StateType {
   quizzard: QuestionPageStateType;
-  common: CommonStateTypes;
 }
 const mapStateToProps = (state: StateType) => {
-  const { quizzard, common } = state;
+  const { quizzard } = state;
 
   return {
     questions: quizzard.questions,
     endpoint: quizzard.endpoint,
-    error: common.error,
+    error: quizzard.error,
   };
 };
 

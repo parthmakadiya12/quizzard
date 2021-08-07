@@ -55,4 +55,15 @@ describe("questionsReducer", () => {
       questions: [{ path: "/123" }],
     });
   });
+
+  it(`returns the proper error when ${types.ERROR} action is dispatched`, () => {
+    const newState = questionsReducer.quizzard(initialState, {
+      type: types.ERROR,
+      payload: "User is Unauthorised.",
+    });
+    expect(newState).toEqual({
+      ...initialState,
+      error: "User is Unauthorised.",
+    });
+  });
 });

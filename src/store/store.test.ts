@@ -5,8 +5,6 @@ it("configures the application store", () => {
     quizzard: {
       endpoint: undefined,
       questions: undefined,
-    },
-    common: {
       error: undefined,
     },
   };

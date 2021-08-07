@@ -4,11 +4,13 @@ import * as types from "../types.json";
 export interface QuestionPageStateType {
   endpoint?: string;
   questions?: QuestionType[];
+  error?: string;
 }
 
 export const initialState: QuestionPageStateType = {
   endpoint: undefined,
   questions: undefined,
+  error: undefined,
 };
 
 const questionsReducer = {
@@ -29,6 +31,10 @@ const questionsReducer = {
       [types.GET_QUESTION]: () => ({
         ...state,
         questions: action.payload,
+      }),
+      [types.ERROR]: () => ({
+        ...state,
+        error: action.payload,
       }),
     };
 

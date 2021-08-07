@@ -1,4 +1,3 @@
-import { errorHandling } from "../../../common/redux/commonActions";
 import axios from "../../../utils/http";
 import * as types from "../types.json";
 import {
@@ -66,6 +65,16 @@ export const getQuestionData =
         payload: calculatePercentage([res.data]),
       });
     } catch (err) {
+      console.log(err, err.message, err.title);
       dispatch(errorHandling(types.GET_QUESTION, err));
     }
   };
+
+const errorHandling = (type: string, error: any) => {
+  return {
+    type: "ERROR",
+    payload: `Request failed for ${type}. Please try again later. ${
+      error.message && `Error is ${error.message}`
+    }`,
+  };
+};

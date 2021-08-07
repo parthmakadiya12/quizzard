@@ -110,8 +110,6 @@ describe("questionsPageActions", () => {
     expect(store.getActions()).toEqual(expectedAction);
   });
 
-  //getQuestionData, voteOnQuestion
-
   it("getQuestionData: should call error handler if call fails", async () => {
     axiosMock.onGet(`/questions/14`).reply(404, {
       response: { data: "data not availible" },
