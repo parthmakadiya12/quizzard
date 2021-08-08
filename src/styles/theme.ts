@@ -12,6 +12,8 @@ export const darkTheme = {
     button: "#127eeb", //light blue
     buttonSecondry: "#4098f0", //lighter blue
     buttonFontColor: "white",
+    inputColor: "#4a5171",
+    inputFontColor: "white",
   },
   type: "dark",
 };
@@ -28,6 +30,8 @@ export const lightTheme = {
     button: "#6287FF",
     buttonSecondry: "#2F60FF",
     buttonFontColor: "white",
+    inputColor: "white",
+    inputFontColor: "#1d345b",
   },
   type: "light",
 };

@@ -1,8 +1,9 @@
-import QuestionsPage from "./QuestionsPage";
-import { createMemoryHistory } from "history";
 import { Router } from "react-router-dom";
+import { createMemoryHistory } from "history";
 import { ThemeProvider } from "styled-components";
-import { darkTheme } from "../../styles/theme";
+
+import QuestionsPage from "../QuestionsPage";
+import { darkTheme } from "../../../styles/theme";
 
 describe("<Questions />", () => {
   let props: any, wrapper: any, history: any, pushSpy: any;

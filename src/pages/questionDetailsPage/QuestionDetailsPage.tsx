@@ -1,13 +1,10 @@
 import { FC, useState, useEffect } from "react";
-import styled from "styled-components";
 import { useParams } from "react-router-dom";
 
-import { CardTitle, Wrapper, Row } from "../../common/styles/layout";
+import { Button, Radio } from "../../common";
 import { P } from "../../common/styles/typography";
-import { Radio } from "../../common/Radio/Radio";
-import { Button } from "../../common";
 import { QuestionType } from "../../common/types/QuestionType";
-import media from "../../common/styles/media";
+import { CardTitle, Row, BigQuestionWrapper } from "../../common/styles/layout";
 
 export interface PropTypes {
   question?: QuestionType;
@@ -43,7 +40,7 @@ const QuestionDetailsPage: FC<PropTypes> = ({
   }, [question, getQuestionData, questionId]);
 
   return (
-    <WrapperStyled id="questionWrapper">
+    <BigQuestionWrapper id="questionWrapper">
       <CardTitle>{question && question.question}</CardTitle>
       {question &&
         question.choices.map((option: any) => (
@@ -59,21 +56,17 @@ const QuestionDetailsPage: FC<PropTypes> = ({
               checked={false}
               selected={name}
             />
-            <P key={`${option.url}_text`}>{option.percentage}%</P>
+            <P
+              id={`${option.choice}_percentage`}
+              key={`${option.url}_percentage`}
+            >
+              {option.percentage}%
+            </P>
           </Row>
         ))}
       <Button clickHandler={() => handleSave(quesUrl, choiceUrl)}>Save</Button>
-    </WrapperStyled>
+    </BigQuestionWrapper>
   );
 };
-
-const WrapperStyled = styled(Wrapper)`
-  & > button {
-    margin-top: 1rem;
-  }
-  @media ${media.tablet} {
-    max-width: 600px;
-  }
-`;
 
 export default QuestionDetailsPage;

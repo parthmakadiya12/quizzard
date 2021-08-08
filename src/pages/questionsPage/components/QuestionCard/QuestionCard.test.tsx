@@ -1,7 +1,8 @@
-import QuestionCard from "./QuestionCard";
 import { ThemeProvider } from "styled-components";
-import { darkTheme, lightTheme } from "../../../../styles/theme";
 import "jest-styled-components";
+
+import QuestionCard from "./QuestionCard";
+import { darkTheme, lightTheme } from "../../../../styles/theme";
 
 describe("<QuestionCard />", () => {
   let props: any, wrapper: any;

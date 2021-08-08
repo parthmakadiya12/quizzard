@@ -1,10 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { FC, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import { getEndPoint } from "../redux/actions/quizzardAction";
-import { QuestionCard } from "./components";
 import styled from "styled-components";
+
+import { QuestionCard } from "./components";
 import media from "../../common/styles/media";
+import { getEndPoint } from "../redux/actions/quizzardAction";
 interface PropTypes {
   questions: any;
   endpoint: string;
@@ -50,8 +51,11 @@ const QuestionsPage: FC<PropTypes> = ({
 };
 
 const Wrapper = styled.div`
-  margin-top: 1rem;
+  margin-top: 20px;
   margin: 10px;
+  & > * {
+    margin-bottom: 10px;
+  }
   @media ${media.tablet} {
     min-width: 560px;
     display: grid;
