@@ -6,14 +6,18 @@
 
   - Quiz list page
   - Quiz details page
-  - Create question page (TODO)
+  - Create question page
 
 - Features
 
   - Vote
-  - mobile first responsive design
+  - Create question
+  - Mobile first responsive design
   - 2 theme (dark/light)
   - Test coverage 100% (excluding config files)
+  - Cypress e2e test
+  - CI-CD Pipeline (with Github Actions)
+  - Deployment on surge
 
 - Technologies/Frameworks
 
@@ -26,8 +30,17 @@
 
   - Currently I deployed it on surge with help of github actions. Ideally for production system we can use nginx and serve the static sites from there.
 
+- For Future
+
+  - [ ] Improve validation
+  - [ ] Better error messages
+  - [ ] Improve type checking (we still have any)
+  - [ ] Refactor at some places
+  - [ ] change hosting with nginx and own server
+
 - Locally Setup
   - Install the dependencies by `yarn`/`npm`
+  - create env file with `REACT_APP_API_SERVER=https://polls.apiblueprint.org/`
   - Run the project by running `yarn start`
   - Create build by running `yarn build`
   - run tests by running `yarn test`

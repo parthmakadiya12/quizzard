@@ -26,6 +26,8 @@ describe("quizzard happy path test", () => {
     cy.server();
     cy.fixture("../fixtures/mock_data.json").then((rc) => {
       voteQuestionMock.voteQuestion(rc.voteQuestion, 20, 114);
+    });
+    cy.fixture("../fixtures/mock_data.json").then((rc) => {
       getQuestionMock.getQuestion(rc.getQuestion, 20);
     });
     cy.visit("http://localhost:3000/questions/20");

@@ -4,23 +4,23 @@ exports[`<QuestionsDetailsPage> should render correctly 1`] = `
 "<Component theme={{...}}>
   <QuestionDetailsPage question={{...}} getQuestionData={[Function: mockConstructor] { _isMockFunction: true, getMockImplementation: [Function (anonymous)], mock: Object [Object: null prototype] { calls: [], instances: [], invocationCallOrder: [], results: [] }, mockClear: [Function (anonymous)], mockReset: [Function (anonymous)], mockRestore: [Function (anonymous)], mockReturnValueOnce: [Function (anonymous)], mockResolvedValueOnce: [Function (anonymous)], mockRejectedValueOnce: [Function (anonymous)], mockReturnValue: [Function (anonymous)], mockResolvedValue: [Function (anonymous)], mockRejectedValue: [Function (anonymous)], mockImplementationOnce: [Function (anonymous)], mockImplementation: [Function (anonymous)], mockReturnThis: [Function (anonymous)], mockName: [Function (anonymous)], getMockName: [Function (anonymous)] }} voteOnQuestion={[Function: mockConstructor] { _isMockFunction: true, getMockImplementation: [Function (anonymous)], mock: Object [Object: null prototype] { calls: [], instances: [], invocationCallOrder: [], results: [] }, mockClear: [Function (anonymous)], mockReset: [Function (anonymous)], mockRestore: [Function (anonymous)], mockReturnValueOnce: [Function (anonymous)], mockResolvedValueOnce: [Function (anonymous)], mockRejectedValueOnce: [Function (anonymous)], mockReturnValue: [Function (anonymous)], mockResolvedValue: [Function (anonymous)], mockRejectedValue: [Function (anonymous)], mockImplementationOnce: [Function (anonymous)], mockImplementation: [Function (anonymous)], mockReturnThis: [Function (anonymous)], mockName: [Function (anonymous)], getMockName: [Function (anonymous)] }}>
     <Styled(Styled(styled.div)) id=\\"questionWrapper\\">
-      <div id=\\"questionWrapper\\" className=\\"sc-gtsrHT sc-dlnjwi sc-hKFxyN cPlHGU eogWRV WGjyy\\">
+      <div id=\\"questionWrapper\\" className=\\"sc-kEqXSa sc-iqAclL sc-crzoAE jrDDQT eHvxWt dpYTNg\\">
         <styled.span>
-          <span className=\\"sc-eCApnc gOuEoq\\">
+          <span className=\\"sc-dIsUp hxgcij\\">
             Favourite programming language?
           </span>
         </styled.span>
         <styled.div alignItems=\\"center\\">
-          <div className=\\"sc-bdnxRM oNYUZ\\">
+          <div className=\\"sc-jrsJWt fhPBso\\">
             <Radio name=\\"Swift\\" choiceUrl=\\"/questions/1/choices/1\\" queUrl=\\"/questions/1\\" clickHandler={[Function: clickHandler]} checked={false} selected=\\"\\">
               <div>
                 <styled.div>
-                  <div className=\\"sc-iqAclL lninrf\\">
+                  <div className=\\"sc-fnVZcZ iKirgg\\">
                     <styled.input value=\\"Swift\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false}>
-                      <input value=\\"Swift\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false} className=\\"sc-crzoAE KbNjG\\" />
+                      <input value=\\"Swift\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false} className=\\"sc-fFSPTT iNqKLd\\" />
                     </styled.input>
-                    <styled.span onClick={[Function: onClick]} Checked={false}>
-                      <span onClick={[Function: onClick]} className=\\"sc-dIsUp cXFqDN\\">
+                    <styled.span id=\\"Swift\\" onClick={[Function: onClick]} Checked={false}>
+                      <span id=\\"Swift\\" onClick={[Function: onClick]} className=\\"sc-bkbkJK koMCtv\\">
                         Swift
                       </span>
                     </styled.span>
@@ -28,8 +28,8 @@ exports[`<QuestionsDetailsPage> should render correctly 1`] = `
                 </styled.div>
               </div>
             </Radio>
-            <styled.p>
-              <p className=\\"sc-kEqXSa gqwRee\\">
+            <styled.p id=\\"Swift_percentage\\">
+              <p id=\\"Swift_percentage\\" className=\\"sc-gKAaRy gOhbFA\\">
                 53.33
                 %
               </p>
@@ -37,16 +37,16 @@ exports[`<QuestionsDetailsPage> should render correctly 1`] = `
           </div>
         </styled.div>
         <styled.div alignItems=\\"center\\">
-          <div className=\\"sc-bdnxRM oNYUZ\\">
+          <div className=\\"sc-jrsJWt fhPBso\\">
             <Radio name=\\"Python\\" choiceUrl=\\"/questions/1/choices/2\\" queUrl=\\"/questions/1\\" clickHandler={[Function: clickHandler]} checked={false} selected=\\"\\">
               <div>
                 <styled.div>
-                  <div className=\\"sc-iqAclL lninrf\\">
+                  <div className=\\"sc-fnVZcZ iKirgg\\">
                     <styled.input value=\\"Python\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false}>
-                      <input value=\\"Python\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false} className=\\"sc-crzoAE KbNjG\\" />
+                      <input value=\\"Python\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false} className=\\"sc-fFSPTT iNqKLd\\" />
                     </styled.input>
-                    <styled.span onClick={[Function: onClick]} Checked={false}>
-                      <span onClick={[Function: onClick]} className=\\"sc-dIsUp cXFqDN\\">
+                    <styled.span id=\\"Python\\" onClick={[Function: onClick]} Checked={false}>
+                      <span id=\\"Python\\" onClick={[Function: onClick]} className=\\"sc-bkbkJK koMCtv\\">
                         Python
                       </span>
                     </styled.span>
@@ -54,8 +54,8 @@ exports[`<QuestionsDetailsPage> should render correctly 1`] = `
                 </styled.div>
               </div>
             </Radio>
-            <styled.p>
-              <p className=\\"sc-kEqXSa gqwRee\\">
+            <styled.p id=\\"Python_percentage\\">
+              <p id=\\"Python_percentage\\" className=\\"sc-gKAaRy gOhbFA\\">
                 26.67
                 %
               </p>
@@ -63,16 +63,16 @@ exports[`<QuestionsDetailsPage> should render correctly 1`] = `
           </div>
         </styled.div>
         <styled.div alignItems=\\"center\\">
-          <div className=\\"sc-bdnxRM oNYUZ\\">
+          <div className=\\"sc-jrsJWt fhPBso\\">
             <Radio name=\\"Objective-C\\" choiceUrl=\\"/questions/1/choices/3\\" queUrl=\\"/questions/1\\" clickHandler={[Function: clickHandler]} checked={false} selected=\\"\\">
               <div>
                 <styled.div>
-                  <div className=\\"sc-iqAclL lninrf\\">
+                  <div className=\\"sc-fnVZcZ iKirgg\\">
                     <styled.input value=\\"Objective-C\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false}>
-                      <input value=\\"Objective-C\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false} className=\\"sc-crzoAE KbNjG\\" />
+                      <input value=\\"Objective-C\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false} className=\\"sc-fFSPTT iNqKLd\\" />
                     </styled.input>
-                    <styled.span onClick={[Function: onClick]} Checked={false}>
-                      <span onClick={[Function: onClick]} className=\\"sc-dIsUp cXFqDN\\">
+                    <styled.span id=\\"Objective-C\\" onClick={[Function: onClick]} Checked={false}>
+                      <span id=\\"Objective-C\\" onClick={[Function: onClick]} className=\\"sc-bkbkJK koMCtv\\">
                         Objective-C
                       </span>
                     </styled.span>
@@ -80,8 +80,8 @@ exports[`<QuestionsDetailsPage> should render correctly 1`] = `
                 </styled.div>
               </div>
             </Radio>
-            <styled.p>
-              <p className=\\"sc-kEqXSa gqwRee\\">
+            <styled.p id=\\"Objective-C_percentage\\">
+              <p id=\\"Objective-C_percentage\\" className=\\"sc-gKAaRy gOhbFA\\">
                 13.33
                 %
               </p>
@@ -89,16 +89,16 @@ exports[`<QuestionsDetailsPage> should render correctly 1`] = `
           </div>
         </styled.div>
         <styled.div alignItems=\\"center\\">
-          <div className=\\"sc-bdnxRM oNYUZ\\">
+          <div className=\\"sc-jrsJWt fhPBso\\">
             <Radio name=\\"Ruby\\" choiceUrl=\\"/questions/1/choices/4\\" queUrl=\\"/questions/1\\" clickHandler={[Function: clickHandler]} checked={false} selected=\\"\\">
               <div>
                 <styled.div>
-                  <div className=\\"sc-iqAclL lninrf\\">
+                  <div className=\\"sc-fnVZcZ iKirgg\\">
                     <styled.input value=\\"Ruby\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false}>
-                      <input value=\\"Ruby\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false} className=\\"sc-crzoAE KbNjG\\" />
+                      <input value=\\"Ruby\\" type=\\"radio\\" name=\\"radio\\" defaultChecked={false} className=\\"sc-fFSPTT iNqKLd\\" />
                     </styled.input>
-                    <styled.span onClick={[Function: onClick]} Checked={false}>
-                      <span onClick={[Function: onClick]} className=\\"sc-dIsUp cXFqDN\\">
+                    <styled.span id=\\"Ruby\\" onClick={[Function: onClick]} Checked={false}>
+                      <span id=\\"Ruby\\" onClick={[Function: onClick]} className=\\"sc-bkbkJK koMCtv\\">
                         Ruby
                       </span>
                     </styled.span>
@@ -106,8 +106,8 @@ exports[`<QuestionsDetailsPage> should render correctly 1`] = `
                 </styled.div>
               </div>
             </Radio>
-            <styled.p>
-              <p className=\\"sc-kEqXSa gqwRee\\">
+            <styled.p id=\\"Ruby_percentage\\">
+              <p id=\\"Ruby_percentage\\" className=\\"sc-gKAaRy gOhbFA\\">
                 6.67
                 %
               </p>
@@ -116,7 +116,7 @@ exports[`<QuestionsDetailsPage> should render correctly 1`] = `
         </styled.div>
         <Button clickHandler={[Function: clickHandler]}>
           <styled.button onClick={[Function: clickHandler]}>
-            <button onClick={[Function: clickHandler]} className=\\"sc-ksluID fZCRQn\\">
+            <button onClick={[Function: clickHandler]} className=\\"sc-gtsrHT fQLZpl\\">
               Save
             </button>
           </styled.button>
