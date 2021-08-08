@@ -1,6 +1,7 @@
 import renderer from "react-test-renderer";
-import { Radio } from "./Radio";
 import { ThemeProvider } from "styled-components";
+
+import Radio from "./Radio";
 import { darkTheme } from "../../styles/theme";
 
 describe("<Radio>", () => {
