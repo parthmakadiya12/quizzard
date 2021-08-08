@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> should render correctly with darkmode 1`] = `
+"<Component theme={{...}}>
+  <Input type={[undefined]} value=\\"Current Value\\" placeholder=\\"Please choose\\" changeHandler={[Function: mockConstructor] { _isMockFunction: true, getMockImplementation: [Function (anonymous)], mock: Object [Object: null prototype] { calls: [], instances: [], invocationCallOrder: [], results: [] }, mockClear: [Function (anonymous)], mockReset: [Function (anonymous)], mockRestore: [Function (anonymous)], mockReturnValueOnce: [Function (anonymous)], mockResolvedValueOnce: [Function (anonymous)], mockRejectedValueOnce: [Function (anonymous)], mockReturnValue: [Function (anonymous)], mockResolvedValue: [Function (anonymous)], mockRejectedValue: [Function (anonymous)], mockImplementationOnce: [Function (anonymous)], mockImplementation: [Function (anonymous)], mockReturnThis: [Function (anonymous)], mockName: [Function (anonymous)], getMockName: [Function (anonymous)] }} id=\\"id\\">
+    <styled.input type=\\"text\\" placeholder=\\"Please choose\\" value=\\"Current Value\\" onChange={[Function: onChange]}>
+      <input type=\\"text\\" placeholder=\\"Please choose\\" value=\\"Current Value\\" onChange={[Function: onChange]} className=\\"sc-bdnxRM LhQCc\\" />
+    </styled.input>
+  </Input>
+</Component>"
+`;
