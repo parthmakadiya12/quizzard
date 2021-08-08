@@ -1,16 +1,19 @@
-import { QuestionType } from "./../../../common/types/QuestionType";
 import MockAdapter from "axios-mock-adapter";
 import configureMockStore from "redux-mock-store";
 import thunk from "redux-thunk";
 
 import axios from "../../../utils/http";
 import * as types from "../types.json";
+import { QuestionType } from "./../../../common/types/QuestionType";
 import { calculatePercentage } from "../../../common/helpers/questionsDataHelper";
 import {
   getEndPoint,
   getQuestions,
   voteOnQuestion,
   getQuestionData,
+  createQuestion,
+  validateResult,
+  clearError,
 } from "./quizzardAction";
 
 const middlewares = [thunk];
@@ -206,5 +209,76 @@ describe("questionsPageActions", () => {
       payload: "/questions",
       type: types.GET_ENDPOINT,
     });
+  });
+
+  it("createQuestion: should dispatch proper type with payload", async () => {
+    axiosMock.onPost(`/questions`).reply(200, questionsData);
+
+    await store.dispatch(createQuestion());
+    const expectedAction = [
+      {
+        type: types.CREATE_QUESTION,
+      },
+    ];
+    expect(store.getActions()).toEqual(expectedAction);
+  });
+
+  it("createQuestion: should call error handler if call fails", async () => {
+    axiosMock.onPost(`/questions`).reply(404, {
+      response: { data: "User unauthenticated" },
+    });
+    const expectedAction = [
+      {
+        payload:
+          "Request failed for POST/CREATE_QUESTION. Please try again later. Error is Request failed with status code 404",
+        type: "ERROR",
+      },
+    ];
+    await store.dispatch(createQuestion(4));
+    expect(store.getActions()).toEqual(expectedAction);
+  });
+
+  it("validateResult: should validate the object and return true for success", async () => {
+    const question = {
+      question: "Where is Kyiv?",
+      choices: ["Japan", "Korea", "Russia"],
+    };
+    await store.dispatch(validateResult(question));
+    expect(store.getActions()).toEqual([]);
+  });
+
+  it("validateResult: should validate the object and return false if question is not valid", async () => {
+    const question = {
+      question: "",
+      choices: ["Japan", "Korea", "Russia"],
+    };
+    const expectedError = [
+      {
+        payload: "Please fill question and Choice correctly.",
+        type: "ERROR",
+      },
+    ];
+    await store.dispatch(validateResult(question));
+    expect(store.getActions()).toEqual(expectedError);
+  });
+
+  it("validateResult: should validate the object and return false if choices are not valid", async () => {
+    const question = {
+      question: "Where is Kyiv?",
+      choices: [],
+    };
+    const expectedError = [
+      {
+        payload: "Please fill question and Choice correctly.",
+        type: "ERROR",
+      },
+    ];
+    await store.dispatch(validateResult(question));
+    expect(store.getActions()).toEqual(expectedError);
+  });
+
+  it("clearError: should dispatch proper action for clearing the error", () => {
+    store.dispatch(clearError());
+    expect(store.getActions()).toEqual([{ type: "ERROR_CLEAR" }]);
   });
 });

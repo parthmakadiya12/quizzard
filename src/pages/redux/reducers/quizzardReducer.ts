@@ -1,5 +1,5 @@
-import { QuestionType } from "../../../common/types/QuestionType";
 import * as types from "../types.json";
+import { QuestionType } from "../../../common/types/QuestionType";
 
 export interface QuestionPageStateType {
   endpoint?: string;
@@ -35,6 +35,10 @@ const questionsReducer = {
       [types.ERROR]: () => ({
         ...state,
         error: action.payload,
+      }),
+      [types.ERROR_CLEAR]: () => ({
+        ...state,
+        error: null,
       }),
     };
 
