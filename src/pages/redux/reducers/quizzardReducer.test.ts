@@ -1,5 +1,6 @@
 import questionsReducer, { initialState } from "../reducers/quizzardReducer";
 import * as types from "../types.json";
+
 const initialStore = {
   quizzard: {
     ...initialState,
@@ -65,5 +66,12 @@ describe("questionsReducer", () => {
       ...initialState,
       error: "User is Unauthorised.",
     });
+  });
+
+  it(`should remove error by getting type ${types.ERROR_CLEAR}`, () => {
+    const newState = questionsReducer.quizzard(initialState, {
+      type: types.ERROR_CLEAR,
+    });
+    expect(newState).toEqual({ ...initialState, error: null });
   });
 });
