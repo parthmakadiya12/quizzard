@@ -1,8 +1,9 @@
 import renderer from "react-test-renderer";
-import QuestionDetailsPage, { PropTypes } from "./QuestionDetailsPage";
-import { ThemeProvider } from "styled-components";
-import { darkTheme } from "../../styles/theme";
 import "jest-styled-components";
+
+import QuestionDetailsPage, { PropTypes } from "../QuestionDetailsPage";
+import { ThemeProvider } from "styled-components";
+import { darkTheme } from "../../../styles/theme";
 
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),

@@ -40,6 +40,14 @@ export const Wrapper = styled(Col)`
   }
 `;
 
+export const BigQuestionWrapper = styled(Wrapper)`
+  margin: 0 10px;
+  @media ${media.tablet} {
+    max-width: 600px;
+    margin: auto;
+  }
+`;
+
 export const CardTitle = styled.span`
   color: ${({ theme }) => theme.color.headerColor};
   width: 100%;
@@ -52,4 +60,15 @@ export const CardTitle = styled.span`
   background-position: bottom;
   background-size: 0.5rem 0.2rem;
   background-repeat: repeat-x;
+`;
+
+export const SubTitle = styled.span`
+  font-size: 1rem;
+  text-transform: capitalize;
+`;
+
+export const SmallText = styled.span`
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  color: ${({ theme }) => theme.color.fontSecondry};
 `;
