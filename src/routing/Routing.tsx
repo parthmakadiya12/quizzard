@@ -1,9 +1,10 @@
 import { Route, Switch } from "react-router-dom";
 import QuestionDetailsPage from "../pages/questionDetailsPage/QuestionDetailsPageContainer";
 import QuestionsPage from "../pages/questionsPage/QuestionsPageContainer";
-import CreateQuestionPage from "../pages/createQuestionPage/CreateQuestionPage";
+import CreateQuestionPage from "../pages/createQuestionPage/CreateQuestionPageContainer";
 import { paths } from "./paths";
 import { Header } from "../common/";
+import Alert from "../common/Alert/AlertContainer";
 
 export default function Routing() {
   return (
@@ -19,6 +20,7 @@ export default function Routing() {
         />
         <Route path={paths.BASE} component={QuestionsPage} />
       </Switch>
+      <Alert />
     </>
   );
 }
