@@ -4,7 +4,7 @@ import styled from "styled-components";
 export interface ButtonProps {
   text?: string;
   children?: any;
-  clickHandler: () => void;
+  clickHandler: (event?: any) => void;
 }
 
 const Button: FC<ButtonProps> = ({ text, children, clickHandler }) => {

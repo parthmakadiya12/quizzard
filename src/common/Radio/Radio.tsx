@@ -10,7 +10,7 @@ interface PropTypes {
   selected?: string;
 }
 
-export const Radio: FC<PropTypes> = ({
+const Radio: FC<PropTypes> = ({
   name,
   choiceUrl,
   queUrl,
@@ -29,6 +29,7 @@ export const Radio: FC<PropTypes> = ({
           defaultChecked={currentActive}
         />
         <Span
+          id={name}
           onClick={() => clickHandler(name, queUrl, choiceUrl)}
           Checked={currentActive}
         >
@@ -74,3 +75,5 @@ const Span = styled("span")<{ Checked: boolean }>`
         : `inset 0 0 0 0.125em ${props.theme.color.title}`};
   }
 `;
+
+export default Radio;
