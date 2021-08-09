@@ -1,0 +1,550 @@
+{
+  "getQuestion": {
+    "question": "Who owns Antilia",
+    "choices": [
+      {
+        "choice": "Mukesh Ambani",
+        "votes": 1,
+        "url": "/questions/20/choices/113"
+      },
+      {
+        "choice": "RamGV",
+        "votes": 0,
+        "url": "/questions/20/choices/114"
+      },
+      {
+        "choice": "Ratan Tata",
+        "votes": 0,
+        "url": "/questions/20/choices/115"
+      }
+    ],
+    "published_at": "2021-08-08T15:20:55.702Z",
+    "url": "/questions/20"
+  },
+  "voteQuestion": {
+    "choice": "Mukesh Ambani",
+    "votes": 2,
+    "url": "/questions/19/choices/113"
+  },
+  "getQuestions": [
+    {
+      "question": "Who tops the Olympic 2021 ? ",
+      "choices": [
+        {
+          "choice": "China",
+          "votes": 1,
+          "url": "/questions/20/choices/116"
+        },
+        {
+          "choice": "Japan",
+          "votes": 0,
+          "url": "/questions/20/choices/117"
+        },
+        {
+          "choice": "Korea",
+          "votes": 0,
+          "url": "/questions/20/choices/118"
+        },
+        {
+          "choice": "USA",
+          "votes": 0,
+          "url": "/questions/20/choices/119"
+        }
+      ],
+      "published_at": "2021-08-08T15:47:17.623Z",
+      "url": "/questions/20"
+    },
+    {
+      "question": "Who owns Antilia",
+      "choices": [
+        {
+          "choice": "Mukesh Ambani",
+          "votes": 2,
+          "url": "/questions/19/choices/113"
+        },
+        {
+          "choice": "Ram gopal verma",
+          "votes": 0,
+          "url": "/questions/19/choices/114"
+        },
+        {
+          "choice": "Ratan Tata",
+          "votes": 0,
+          "url": "/questions/19/choices/115"
+        }
+      ],
+      "published_at": "2021-08-08T15:20:55.702Z",
+      "url": "/questions/19"
+    },
+    {
+      "question": "What is the height of vikavolt?",
+      "choices": [
+        {
+          "choice": "14",
+          "votes": 0,
+          "url": "/questions/18/choices/109"
+        },
+        {
+          "choice": "15",
+          "votes": 0,
+          "url": "/questions/18/choices/110"
+        },
+        {
+          "choice": "17",
+          "votes": 0,
+          "url": "/questions/18/choices/111"
+        },
+        {
+          "choice": "25",
+          "votes": 0,
+          "url": "/questions/18/choices/112"
+        }
+      ],
+      "published_at": "2021-08-07T07:53:17.953Z",
+      "url": "/questions/18"
+    },
+    {
+      "question": "What is the base HP of mesprit?",
+      "choices": [
+        {
+          "choice": "260",
+          "votes": 0,
+          "url": "/questions/17/choices/105"
+        },
+        {
+          "choice": "261",
+          "votes": 0,
+          "url": "/questions/17/choices/106"
+        },
+        {
+          "choice": "263",
+          "votes": 0,
+          "url": "/questions/17/choices/107"
+        },
+        {
+          "choice": "271",
+          "votes": 0,
+          "url": "/questions/17/choices/108"
+        }
+      ],
+      "published_at": "2021-08-07T07:41:26.802Z",
+      "url": "/questions/17"
+    },
+    {
+      "question": "What is the weight of skrelp?",
+      "choices": [
+        {
+          "choice": "72",
+          "votes": 0,
+          "url": "/questions/16/choices/101"
+        },
+        {
+          "choice": "73",
+          "votes": 0,
+          "url": "/questions/16/choices/102"
+        },
+        {
+          "choice": "75",
+          "votes": 0,
+          "url": "/questions/16/choices/103"
+        },
+        {
+          "choice": "83",
+          "votes": 0,
+          "url": "/questions/16/choices/104"
+        }
+      ],
+      "published_at": "2021-08-07T07:37:42.877Z",
+      "url": "/questions/16"
+    },
+    {
+      "question": "Wha abilities does dito has?",
+      "choices": [
+        {
+          "choice": "Early bird",
+          "votes": 0,
+          "url": "/questions/15/choices/97"
+        },
+        {
+          "choice": "Inner focus",
+          "votes": 0,
+          "url": "/questions/15/choices/98"
+        },
+        {
+          "choice": "Limber",
+          "votes": 0,
+          "url": "/questions/15/choices/99"
+        },
+        {
+          "choice": "Sap sipper",
+          "votes": 0,
+          "url": "/questions/15/choices/100"
+        }
+      ],
+      "published_at": "2021-08-06T12:38:29.111Z",
+      "url": "/questions/15"
+    },
+    {
+      "question": "Favourite programming language?",
+      "choices": [
+        {
+          "choice": ".NET",
+          "votes": 16,
+          "url": "/questions/14/choices/89"
+        },
+        {
+          "choice": "Ruby",
+          "votes": 9,
+          "url": "/questions/14/choices/93"
+        },
+        {
+          "choice": "Python",
+          "votes": 3,
+          "url": "/questions/14/choices/92"
+        },
+        {
+          "choice": "Objective-C",
+          "votes": 2,
+          "url": "/questions/14/choices/90"
+        },
+        {
+          "choice": "PHP",
+          "votes": 1,
+          "url": "/questions/14/choices/91"
+        },
+        {
+          "choice": "Swift",
+          "votes": 1,
+          "url": "/questions/14/choices/94"
+        },
+        {
+          "choice": "To těžko, Anežko",
+          "votes": 0,
+          "url": "/questions/14/choices/95"
+        },
+        {
+          "choice": "jQuery",
+          "votes": 0,
+          "url": "/questions/14/choices/96"
+        }
+      ],
+      "published_at": "2021-07-29T22:28:30.469Z",
+      "url": "/questions/14"
+    },
+    {
+      "question": "Favourite food?",
+      "choices": [
+        {
+          "choice": "Japanese",
+          "votes": 135,
+          "url": "/questions/13/choices/87"
+        },
+        {
+          "choice": "Indian",
+          "votes": 83,
+          "url": "/questions/13/choices/86"
+        },
+        {
+          "choice": "none",
+          "votes": 80,
+          "url": "/questions/13/choices/88"
+        },
+        {
+          "choice": "Chinese",
+          "votes": 27,
+          "url": "/questions/13/choices/85"
+        }
+      ],
+      "published_at": "2021-07-28T00:05:16.102Z",
+      "url": "/questions/13"
+    },
+    {
+      "question": "Favourite programming language?",
+      "choices": [
+        {
+          "choice": "Elixir",
+          "votes": 46,
+          "url": "/questions/12/choices/80"
+        },
+        {
+          "choice": "Swift",
+          "votes": 5,
+          "url": "/questions/12/choices/84"
+        },
+        {
+          "choice": "Python",
+          "votes": 1,
+          "url": "/questions/12/choices/82"
+        },
+        {
+          "choice": "Objective-C",
+          "votes": 0,
+          "url": "/questions/12/choices/81"
+        },
+        {
+          "choice": "Ruby",
+          "votes": 0,
+          "url": "/questions/12/choices/83"
+        }
+      ],
+      "published_at": "2021-07-26T20:35:58.281Z",
+      "url": "/questions/12"
+    },
+    {
+      "question": "Favourite programming language?",
+      "choices": [
+        {
+          "choice": "Objective-C",
+          "votes": 1,
+          "url": "/questions/11/choices/76"
+        },
+        {
+          "choice": "Python",
+          "votes": 0,
+          "url": "/questions/11/choices/77"
+        },
+        {
+          "choice": "Ruby",
+          "votes": 0,
+          "url": "/questions/11/choices/78"
+        },
+        {
+          "choice": "Swift",
+          "votes": 0,
+          "url": "/questions/11/choices/79"
+        }
+      ],
+      "published_at": "2021-07-23T11:37:44.678Z",
+      "url": "/questions/11"
+    },
+    {
+      "question": "Game Genre",
+      "choices": [
+        {
+          "choice": "Action",
+          "votes": 0,
+          "url": "/questions/10/choices/69"
+        },
+        {
+          "choice": "Action-adventure",
+          "votes": 0,
+          "url": "/questions/10/choices/71"
+        },
+        {
+          "choice": "Role-playing",
+          "votes": 0,
+          "url": "/questions/10/choices/72"
+        },
+        {
+          "choice": "Shooter",
+          "votes": 0,
+          "url": "/questions/10/choices/70"
+        },
+        {
+          "choice": "Simulation",
+          "votes": 0,
+          "url": "/questions/10/choices/73"
+        },
+        {
+          "choice": "Sports",
+          "votes": 0,
+          "url": "/questions/10/choices/75"
+        },
+        {
+          "choice": "Strategy",
+          "votes": 0,
+          "url": "/questions/10/choices/74"
+        }
+      ],
+      "published_at": "2015-05-27T21:22:26.670Z",
+      "url": "/questions/10"
+    },
+    {
+      "question": "Favourite hot beverage?",
+      "choices": [
+        {
+          "choice": "Apple Cider",
+          "votes": 0,
+          "url": "/questions/9/choices/67"
+        },
+        {
+          "choice": "Coffee",
+          "votes": 0,
+          "url": "/questions/9/choices/66"
+        },
+        {
+          "choice": "Hot Chocolate",
+          "votes": 0,
+          "url": "/questions/9/choices/68"
+        },
+        {
+          "choice": "Tea",
+          "votes": 0,
+          "url": "/questions/9/choices/65"
+        }
+      ],
+      "published_at": "2015-05-27T21:22:26.648Z",
+      "url": "/questions/9"
+    },
+    {
+      "question": "Transport of choice?",
+      "choices": [
+        {
+          "choice": "⛵️",
+          "votes": 6,
+          "url": "/questions/8/choices/63"
+        },
+        {
+          "choice": "🚗",
+          "votes": 2,
+          "url": "/questions/8/choices/59"
+        },
+        {
+          "choice": "🚎",
+          "votes": 1,
+          "url": "/questions/8/choices/60"
+        },
+        {
+          "choice": "🚠",
+          "votes": 1,
+          "url": "/questions/8/choices/64"
+        },
+        {
+          "choice": "✈️",
+          "votes": 0,
+          "url": "/questions/8/choices/56"
+        },
+        {
+          "choice": "🚀",
+          "votes": 0,
+          "url": "/questions/8/choices/58"
+        },
+        {
+          "choice": "🚁",
+          "votes": 0,
+          "url": "/questions/8/choices/57"
+        },
+        {
+          "choice": "🚃",
+          "votes": 0,
+          "url": "/questions/8/choices/62"
+        },
+        {
+          "choice": "🚈",
+          "votes": 0,
+          "url": "/questions/8/choices/61"
+        }
+      ],
+      "published_at": "2015-05-27T21:22:26.619Z",
+      "url": "/questions/8"
+    },
+    {
+      "question": "Bacon?",
+      "choices": [
+        {
+          "choice": "🇨🇦",
+          "votes": 0,
+          "url": "/questions/7/choices/55"
+        },
+        {
+          "choice": "🇬🇧",
+          "votes": 0,
+          "url": "/questions/7/choices/53"
+        },
+        {
+          "choice": "🇺🇸",
+          "votes": 0,
+          "url": "/questions/7/choices/54"
+        }
+      ],
+      "published_at": "2015-05-27T21:22:26.601Z",
+      "url": "/questions/7"
+    },
+    {
+      "question": "Favourite colour?",
+      "choices": [
+        {
+          "choice": "Green",
+          "votes": 1,
+          "url": "/questions/6/choices/49"
+        },
+        {
+          "choice": "Yellow",
+          "votes": 1,
+          "url": "/questions/6/choices/48"
+        },
+        {
+          "choice": "Blue",
+          "votes": 0,
+          "url": "/questions/6/choices/51"
+        },
+        {
+          "choice": "Cyan",
+          "votes": 0,
+          "url": "/questions/6/choices/50"
+        },
+        {
+          "choice": "Orange",
+          "votes": 0,
+          "url": "/questions/6/choices/47"
+        },
+        {
+          "choice": "Red",
+          "votes": 0,
+          "url": "/questions/6/choices/46"
+        },
+        {
+          "choice": "Violet",
+          "votes": 0,
+          "url": "/questions/6/choices/52"
+        }
+      ],
+      "published_at": "2015-05-27T21:22:26.576Z",
+      "url": "/questions/6"
+    },
+    {
+      "question": "Console of choice?",
+      "choices": [
+        {
+          "choice": "Xbox One",
+          "votes": 55,
+          "url": "/questions/5/choices/45"
+        },
+        {
+          "choice": "PlayStation 4",
+          "votes": 38,
+          "url": "/questions/5/choices/43"
+        },
+        {
+          "choice": "Wii U",
+          "votes": 30,
+          "url": "/questions/5/choices/44"
+        }
+      ],
+      "published_at": "2015-05-27T21:22:26.557Z",
+      "url": "/questions/5"
+    }
+  ],
+  "createQuestion": {
+    "question": "Where is the Apple headquarter ?",
+    "choices": [
+      {
+        "choice": "Japan",
+        "votes": 0,
+        "url": "/questions/21/choices/120"
+      },
+      {
+        "choice": "USA",
+        "votes": 0,
+        "url": "/questions/21/choices/121"
+      },
+      {
+        "choice": "Uganda",
+        "votes": 0,
+        "url": "/questions/21/choices/122"
+      }
+    ],
+    "published_at": "2021-08-09T00:45:53.072Z",
+    "url": "/questions/21"
+  }
+}
